@@ -25,3 +25,11 @@ console.log (num1 % num2)
 alert (num1 + num2)
 }
 
+// DICE 
+
+var dice = Math.random()
+var dic = (dice * 6) +1
+var stars = Math.floor(dic)
+alert ("Guess What Is Coming From Dice")
+alert (stars)
+
