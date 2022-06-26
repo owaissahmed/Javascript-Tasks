@@ -75,3 +75,30 @@ list.push(word)
     }
 PasswordGenerated = list.splice(",").join("")
 alert ("Your Password is Ready..." + "\n" + PasswordGenerated)
+
+// USER HIRING
+
+var html = prompt("Do you know HTML..??");
+var css = prompt("Do you know CSS..??");
+
+if (html === "yes" || css === "yes") {
+    var js = +prompt("How many years you have work on JS..??")
+    if (js >= 2) {
+        var city = prompt("Where you live..??")
+        if (city === "karachi") {
+            var age = +prompt("How many years old you are..??")
+            if (age >= 18) {
+                alert("Congrats you are hire")
+            } else {
+                alert("You are not select bcz you are not 18 years old")
+            }
+        } else {
+            alert("You are not select bcz you are not live in karachi")
+        }
+    } else {
+        alert("You are not select bcz you are not bcz you have no expierience on JS over 2 years")
+    }
+} else {
+    alert("You are not select bcz you are not know both HTML and CSS")
+}
+
