@@ -102,3 +102,39 @@ if (html === "yes" || css === "yes") {
     alert("You are not select bcz you are not know both HTML and CSS")
 }
 
+// RESTAURENT
+
+var input = prompt("What do you want to eat..?")
+var desi = ["-","biryani", "pulao", "nihari", "qorma", "karahi", "burger", "pizza", "daal", "shawarma", "fish","won-ton" ,"pasta", "chaat","falooda" ,"gol gappe", "shami kabab", "chapli kabab", "tikka", "broast", "roll", "nuggets", "fries", "soup", "cold drink ", "salad ", "raita", "tea", "coffee","ice-cream","shakes"]
+input = input.toLowerCase();
+var flag = false
+
+if (input === "") {
+    flag = "empty"
+}
+
+for (i = 0; i < desi.length; i++) {
+    if (input === desi[i]) {
+        alert(input + " is " + "Availible")
+        flag = true
+        document.write("<h1>" + "Availible Items In Our Restaurent :" + "</h1>")
+
+        for (j = 1; j < desi.length; j++) {
+            document.write("<h3>" + j + ") "+ desi[j] + "</h3>")
+        }
+    }
+}
+
+if (flag === false) {
+        alert(input + " is not availible")
+        document.write("<h1>" + "Availible Items In Our Restaurent" + "</h1>")
+
+        for (j = 1; j < desi.length; j++) {
+            document.write("<h3>" + j + ") "+ desi[j] + "</h3>")
+        }
+    }
+
+if (flag === "empty") {
+    alert("Plzzz fill this requirement")
+}
+
